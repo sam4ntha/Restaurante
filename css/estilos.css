@@ -189,3 +189,11 @@ header .textos h3 {
     float: left;
     text-align: center;
 }
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
