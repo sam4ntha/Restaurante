@@ -3,7 +3,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
     font-family: "Open Sans", Arial, sans-serif;
@@ -15,7 +15,8 @@ body {
     margin: auto;
     overflow: hidden;
 }
-/* --------------------HEADER-----------------*/
+
+/* --- --- --- HEADER --- --- ---  */
 header {
     width: 100%;
     background: url('../img/bg.jpg') #281a0c;
@@ -32,7 +33,7 @@ header .menu {
     text-align: right;
 }
 header .menu a {
-    color: #FFF;
+    color: #fff;
     font-size: 20px;
     font-weight: 300;
     display: inline-block;
@@ -40,12 +41,12 @@ header .menu a {
     text-decoration: none;
     position: relative;
 }
-header ,menu a:hover {
+header .menu a:hover {
     text-decoration: underline;
 }
 header .textos {
     width: 100%;
-    color: #FFF;
+    color: #fff;
     position: absolute;
     top: 50%;
     margin-top: -52px;
@@ -62,7 +63,8 @@ header .textos h3 {
     font-size: 25px;
     font-style: italic;
 }
-/* ----------- MAIN ------------ */
+
+/* --------------MAIN-------------- */
 .main {
     background: url('../img/bg-textura.png');
     background-repeat: repeat;
@@ -77,9 +79,23 @@ header .textos h3 {
     left: 0;
     top: -50px;
     z-index: 0;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
 }
-.main .acerca-de article h3 {
+.main .acerca-de .foto img{
+    vertical-align: top;
+    width: 100%;
+}
+.main .acerca-de article {
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    float: right;
+    box-shadow:  0px 0px 15px rgba(0,0,0,.35);
+}
+.main .acerca-de article h3{
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 40px;
@@ -88,7 +104,8 @@ header .textos h3 {
     line-height: 28px;
     margin-bottom: 15px;
 }
-/* -----------------MENÚ DE PRODUCTOS-------------------*/
+
+/* ------------MENÚ-------------- */
 .main .menu {
     padding-top: 570px;
     margin-bottom: 50px;
@@ -99,7 +116,8 @@ header .textos h3 {
     text-align: center;
     margin-bottom: 40px;
 }
-.main .menu .contenedor-menu, .main .menu .contenedor-menu2 {
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
     border: 1px solid #000;
     background: transparent;
     padding: 10px;
@@ -152,11 +170,11 @@ header .textos h3 {
 .main .galeria .foto img:hover {
     opacity: 1;
     -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
+    -o-transition: all -3s ease;
     transition: all .3s ease;
 }
 .main .ubicacion {
-    background-color: #FFF;
+    background-color: #fff;
     padding: 60px 0;
 }
 .main .ubicacion .titulo {
@@ -184,7 +202,8 @@ header .textos h3 {
     text-align: center;
     margin-bottom: 20px;
 }
-.main .ubicacion .horarios .entre-semana, .main .ubicacion .horarios .fin-de-semana {
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-de-semana {
     width: 50%;
     float: left;
     text-align: center;
@@ -197,17 +216,19 @@ header .textos h3 {
     width: 100%;
     max-height: 600px;
 }
-/* -------------FOOTER----------------*/
+
+/* -------------FOOTER------------- */
 footer {
     background: #000;
 }
 footer .copyright {
     text-align: center;
     padding: 15px 0;
-    color: #FFF;
+    color: #fff;
 }
-/* ---------------------MEDIA QUERIES-------------------*/
-@media screen and (max-width: 800px) {
+
+/* ------------------MEDIA QUERIES---------------- */
+@media screen and (max-width: 800px){
     header .contenedor {
         position: static;
         height: auto;
@@ -239,7 +260,7 @@ footer .copyright {
         transform: translate(0px, 0);
     }
     .main .menu {
-        padding-top: 300px;
+        padding-top: 300px;    
     }
     .main .menu article {
         width: 100%;
@@ -252,20 +273,21 @@ footer .copyright {
         margin: auto;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .main .acerca-de article h3{
+@media screen and (max-width: 400px){
+    .main .acerca-de article h3 {
         font-size: 34px;
         margin-bottom: 10px;
     }
-    .main .menu article .nombre, .main .menu article .precio {
+    .main .menu article .nombre,
+    .main .menu article .precio {
         font-size: 16px;
         line-height: 16px;
     }
     .main .ubicacion .direccion {
         margin-bottom: 15px;
     }
-    .main .ubicacion .direccion, .main .ubicacion .horarios {
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
         width: 100%;
         text-align: center;
     }
